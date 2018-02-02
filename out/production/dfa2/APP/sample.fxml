@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" alignment="center" prefHeight="650.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="600.0" spacing="7.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#NewUI" text="New" />
+            <Button mnemonicParsing="false" onAction="#OpenUI" text="Open" />
+            <Button mnemonicParsing="false" onAction="#OpenFSM" text="Open FSM" />
+            <Button mnemonicParsing="false" onAction="#SaveUI" text="Save" />
+            <Button mnemonicParsing="false" onAction="#SaveFSM" text="Save FSM" />
+            <Button mnemonicParsing="false" onAction="#SaveAsVariable" text="Save As Variable" />
+            <Button mnemonicParsing="false" onAction="#ClearUI" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#Show_Variables" text="Show Variables" />
+            <TextField fx:id="transition_name_txt" prefHeight="25.0" prefWidth="123.0" promptText="Default transition &quot;a&quot;" />
+            <Button mnemonicParsing="false" onAction="#TestFSM" text="Test FSM" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <TabPane fx:id="tabs" prefHeight="516.0" prefWidth="600.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints halignment="CENTER" maxWidth="1.7976931348623157E308" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="35.0" prefHeight="35.0" vgrow="NEVER" />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

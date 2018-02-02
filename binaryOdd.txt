@@ -1,0 +1,8 @@
+0 1
+e0 true false
+e1 false true
+-
+0 e0 e0
+1 e0 e1
+0 e1 e0
+1 e1 e1
